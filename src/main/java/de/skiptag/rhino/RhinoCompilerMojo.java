@@ -1,23 +1,5 @@
 package de.skiptag.rhino;
 
-/*
- * Copyright 2001-2005 The Apache Software Foundation.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-import static com.google.common.base.Preconditions.checkState;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -25,17 +7,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.maven.plugin.AbstractMojo;
-import org.apache.maven.plugin.MojoExecutionException;
-import org.mozilla.javascript.CompilerEnvirons;
-import org.mozilla.javascript.optimizer.ClassCompiler;
-import org.mozilla.javascript.tools.SourceReader;
-import org.mozilla.javascript.tools.ToolErrorReporter;
-
-import com.google.common.collect.Lists;
-
 /**
- * Goal which touches a timestamp file.
+ * Goal which compiles all files in a given directory to Java class files in the
+ * projects output directory
+ * 
+ * A lot of code is copied from {@link org.mozilla.javascript.tools.jsc.Main}
+ * and adapted to fit Maven.
  * 
  * @goal compile
  * 

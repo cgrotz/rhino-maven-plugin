@@ -1,5 +1,4 @@
-**rhino-maven-plugin** is a Maven plugin to compile Javascript to Java class file using Mozilla Rhino.
-The compiled classes require Mozilla Rhino to run
+**rhino-maven-plugin** is a Maven plugin to compile Javascript to Java class file using Mozilla Rhino. The compiled classes require Mozilla Rhino to run. The plugin is licensed under the Mozilla Public License 2.0 due to MPL being the license for Rhino
 
 Maven Distribution
 ==================
@@ -9,7 +8,7 @@ Maven Distribution
 	    <plugin>
 	      <groupId>de.skiptag</groupId>
 	      <artifactId>rhino-maven-plugin</artifactId>
-	      <version>1.0.0</version>
+	      <version>1.0.1</version>
 	    </plugin>
 	  </plugins>
 	</build>
