@@ -21,7 +21,6 @@
 			<url>http://www.mozilla.org/MPL/2.0/index.txt</url>
 		</license>
 	</licenses>
-</licenses>
 	<scm>
 		<connection>scm:git:git@github.com:skiptag/rhino-maven-plugin.git</connection>
 		<developerConnection>scm:git:git@github.com:skiptag/rhino-maven-plugin.git</developerConnection>

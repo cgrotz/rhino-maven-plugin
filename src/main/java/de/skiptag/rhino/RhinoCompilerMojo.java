@@ -1,11 +1,22 @@
 package de.skiptag.rhino;
 
+import static com.google.common.base.Preconditions.checkState;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.maven.plugin.AbstractMojo;
+import org.apache.maven.plugin.MojoExecutionException;
+import org.mozilla.javascript.CompilerEnvirons;
+import org.mozilla.javascript.optimizer.ClassCompiler;
+import org.mozilla.javascript.tools.SourceReader;
+import org.mozilla.javascript.tools.ToolErrorReporter;
+
+import com.google.common.collect.Lists;
 
 /**
  * Goal which compiles all files in a given directory to Java class files in the
