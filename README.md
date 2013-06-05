@@ -1,4 +1,4 @@
-**rhino-maven-plugin** is a Maven plugin to compile Javascript to Bytecode using Mozilla Rhino.
+**rhino-maven-plugin** is a Maven plugin to compile Javascript to Java class file using Mozilla Rhino.
 The compiled classes require Mozilla Rhino to run
 
 Maven Distribution
