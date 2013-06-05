@@ -9,7 +9,7 @@
 	<groupId>de.skiptag</groupId>
 	<artifactId>rhino-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>rhino-maven-plugin</name>
 	<description>Maven build plugin for compiling Javascript to Java based on Mozilla Rhino</description>
 	<url>https://github.com/skiptag/rhino-maven-plugin</url>
