@@ -37,21 +37,6 @@ Mozilla Rhino as dependency
 	  <version>1.7R4</version>
 	</dependency>
 ```
-The artifact is deployed to Sonatype central and will be deployed on Maven central asap.
-```xml
-	<repositories>
-	  <repository>
-	    <id>sonatype-oss-public</id>
-	    <url>https://oss.sonatype.org/content/groups/public/</url>
-	    <releases>
-	      <enabled>true</enabled>
-	    </releases>
-	    <snapshots>
-	      <enabled>true</enabled>
-	    </snapshots>
-	  </repository>
-	</repositories>
-```
-
+The artifact is deployed to Maven Central so no repository configuration should be necessary.
 
 
