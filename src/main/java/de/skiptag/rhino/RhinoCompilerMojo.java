@@ -201,7 +201,12 @@ public class RhinoCompilerMojo extends AbstractMojo {
 		superClass = classLoader.forName(superclass);
 		compiler.setTargetExtends(superClass);
 	    } catch (ClassNotFoundException e) {
-		getLog().error(e);
+		try {
+		    superClass = Class.forName(superclass);
+		    compiler.setTargetExtends(superClass);
+		} catch (ClassNotFoundException ex) {
+		    getLog().error(ex);
+		}
 	    }
 	}
 	if (!interfaces.isEmpty()) {
@@ -210,7 +215,11 @@ public class RhinoCompilerMojo extends AbstractMojo {
 		try {
 		    list.add(classLoader.forName(interfaceName));
 		} catch (ClassNotFoundException e) {
-		    getLog().error(e);
+		    try {
+			list.add(Class.forName(interfaceName));
+		    } catch (ClassNotFoundException ex) {
+			getLog().error(ex);
+		    }
 		}
 	    }
 	    Class<?>[] implementsClasses = list.toArray(new Class<?>[list.size()]);
