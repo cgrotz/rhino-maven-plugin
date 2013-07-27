@@ -8,7 +8,7 @@ Maven Distribution
 	    <plugin>
 	      <groupId>de.skiptag</groupId>
 	      <artifactId>rhino-maven-plugin</artifactId>
-	      <version>1.0.1</version>
+	      <version>1.0.3</version>
 	    </plugin>
 	  </plugins>
 	</build>
